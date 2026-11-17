@@ -3,6 +3,7 @@ import telebot
 from telebot import types
 
 TOKEN = os.environ.get('TOKEN')
+print("TOKEN =", TOKEN)
 bot = telebot.TeleBot(TOKEN)
 
 CITY_PLACES = [
