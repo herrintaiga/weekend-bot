@@ -1,7 +1,8 @@
+import os
 import telebot
 from telebot import types
 
-TOKEN = '9146231071:AAG-fbZUNVec8yGbxe-GXcG1SB2D8e6WAAo'
+TOKEN = os.environ.get('TOKEN')
 bot = telebot.TeleBot(TOKEN)
 
 CITY_PLACES = [
